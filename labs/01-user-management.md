@@ -35,7 +35,7 @@ NorthStar Technology needs to provision a new employee account for Alex Employee
 - Located the Alex Employee test account in Microsoft Entra ID.
 - Verified that the account is enabled.
 - Verified that the user type is Member.
-- No account changes were made during verification.
+- Checked that user's group memberships and found no groups listed.
 
 ## Verification Notes
 
