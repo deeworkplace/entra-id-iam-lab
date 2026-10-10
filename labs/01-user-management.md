@@ -30,15 +30,24 @@ NorthStar Technology needs to provision a new employee account for Alex Employee
 -Test tenant
 -Fictional organization: NorthStar Technology
 
+## Actions Performed
+
+- Located the Alex Employee account in Microsoft Entra ID.
+- Created the IT-Helpdesk security group.
+- Created the IT-Cloud-Admins security group.
+- Added Alex Employee to IT-Helpdesk security group.
+
+## Verification Results
+
+- Confirmed that Alex Employee's account is enabled.
+- Confirmed the user type is Member.
+- Confirmed that Alex Employee appears in the IT-Helpdesk membership list.
+- Verified that Alex was not assigned to IT-Cloud-Admins. 
+
 ## Results
 
-- Located the Alex Employee test account in Microsoft Entra ID.
-- Verified that the account is enabled.
-- Verified that the user type is Member.
-- Checked that user's group memberships and found no groups listed.
+Successfully verified a test user account and provisioned group membership according to the user's fictional helpdesk role.
+Created separate security groups for helpdesk and cloud administration to support organized access management.
 
-## Verification Notes
-
-The account is enabled and configured as a Member user. 
-Additional checks, including group membership and access assignments, will be performed in subsequent steps.
+No administrative roles or additional resource permissions were assigned during this lab.
 
