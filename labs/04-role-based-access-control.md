@@ -72,4 +72,4 @@ Security groups organize users and can be used to manage access to resources. Di
 
 ## Conclusion
 
-This lab demonstrated how Microsoft Entra directory roles provide different levels of administrative access. Reviewing
+This lab demonstrated how Microsoft Entra directory roles provide different levels of administrative access. Reviewing role permissions and assignments helps an IAM practitioner understand access boundaries, identify privileged roles, and apply the principle of least privilege.
