@@ -1,5 +1,5 @@
 # Lab 01: User Management
-
+ 
 ## Objective
 
 Practice basic user administration in Microsoft Entra ID by reviewing a user account, managing security group membership, and verifying the changes.
