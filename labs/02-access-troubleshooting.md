@@ -1,7 +1,7 @@
 # Lab 02: Access Troubleshooting 
 
 ## Objective 
-
+ 
 Investigate a simulated user access issue in Microsoft Entra ID by reviewing account details and group memberships, identifying a missing security group, and verifying the membership change.
 
 ## Scenario
