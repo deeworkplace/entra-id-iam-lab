@@ -1,4 +1,4 @@
-# Lab 01: User Management
+# Lab 01: User Management 
  
 ## Objective
 
