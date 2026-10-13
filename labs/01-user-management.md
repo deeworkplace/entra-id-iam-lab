@@ -1,53 +1,46 @@
 # Lab 01: User Management
 
 ## Objective
-Demonstrate basic Microsoft Entra ID  user administration and identity lifecycle management.
+
+Practice basic user administration in Microsoft Entra ID by reviewing a user account, managing security group membership, and verifying the changes.
 
 ## Scenario
 
-NorthStar Technology needs to provision a new employee account for Alex Employee, who has joined the IT department.
-
-## Tasks
-1. Create a user account
-2. Configure the user's basic information
-3. Assign appropriate group membership
-4. Verify the account
-5. Disable the account
-6. Document the changes
-
-## Skills Demonstrated
-
-- Microsoft Entra ID
-- User administration
-- Identity lifecycle management
-- Group membership
-- Access management
-- Account troubleshooting
+NorthStar Technology needs an account for Alex Employee, a new member of the IT helpdesk team. The account must be associated with the appropriate security group, with access kept separate from cloud administration responsibilities.
 
 ## Environment
 
--Microsoft Entra ID
--Test tenant
--Fictional organization: NorthStar Technology
+- Platform: Microsoft Entra ID
+- Tenant: Test tenant
+- Organization: NorthStar Technology (fictional)
+
+## Tasks
+
+1. Locate the Alex Employee account.
+2. Review the user's basic account information.
+3. Create security groups for helpdesk and cloud administration.
+4. Add Alex Employee to the appropriate group.
+5. Verify the account details and group membership.
+6. Document the changes.
 
 ## Actions Performed
 
 - Located the Alex Employee account in Microsoft Entra ID.
-- Created the IT-Helpdesk security group.
-- Created the IT-Cloud-Admins security group.
-- Added Alex Employee to IT-Helpdesk security group.
+- Created the `IT-Helpdesk` security group.
+- Created the `IT-Cloud-Admins` security group.
+- Added Alex Employee to the `IT-Helpdesk` group.
 
 ## Verification Results
 
-- Confirmed that Alex Employee's account is enabled.
-- Confirmed the user type is Member.
-- Confirmed that Alex Employee appears in the IT-Helpdesk membership list.
-- Verified that Alex was not assigned to IT-Cloud-Admins. 
+- Account status: Enabled
+- User type: Member
+- `IT-Helpdesk` group membership: Confirmed
+- `IT-Cloud-Admins` group membership: Not assigned
+- Administrative roles: None assigned
+- Additional resource permissions: None assigned
 
 ## Results
 
-Successfully verified a test user account and provisioned group membership according to the user's fictional helpdesk role.
-Created separate security groups for helpdesk and cloud administration to support organized access management.
+Alex Employee's account was verified, and the user was added to the IT-Helpdesk security group. The account remained enabled, with no administrative roles or additional resource permissions assigned.
 
-No administrative roles or additional resource permissions were assigned during this lab.
-
+Separate security groups were established for helpdesk and cloud administration to keep group membership organized according to job responsibilities.
