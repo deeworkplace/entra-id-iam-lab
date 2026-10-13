@@ -1,4 +1,4 @@
-# Lab 03: User Offboarding and Access Removal
+# Lab 03: User Offboarding and Access Removal 
 
 ## Objective
 
