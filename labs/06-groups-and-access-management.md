@@ -2,89 +2,79 @@
 
 ## Objective
 
-Learn how Microsoft Entra ID security groups are configured and managed, how group membership changes are verified, and how group membership differs from administrative role assignments.
+Practice managing security group membership in Microsoft Entra ID and verifying changes from both the group and user account views. Review how group membership differs from administrative role assignments.
 
 ## Scenario
 
-NorthStar Technologies needs a consistent way to organize users and manage access. The IT team uses security groups to organize accounts and must understand how group membership relates to permissions and administrative roles.
+NorthStar Technology uses security groups to organize users and manage access. This exercise focuses on reviewing an existing group, adding and removing a test user, and checking how membership changes appear in Microsoft Entra ID.
 
-## Tasks
+## Environment
+
+- Platform: Microsoft Entra ID
+- Tenant: Free test tenant
+- Security group: `IT-Helpdesk`
+- Test account: MFA Test User
+
+## Tasks Performed
 
 ### 1. Review Security Group Properties
 
-Located the existing `it helpdesk` security group in the Microsoft Entra admin center.
+Located the existing `IT-Helpdesk` security group in the Microsoft Entra admin center.
 
-Reviewed the group's properties and confirmed:
+The group properties showed:
 
 - Group type: Security
 - Membership type: Assigned
 - Initial member count: 0
 
-Assigned membership allows administrators to manually add and remove group members.
+Assigned membership allows administrators to manage group membership manually by adding or removing users.
 
-### 2. Add a Test User to the Group
+### 2. Add a Test User
 
-Added the existing MFA Test User account to the `it helpdesk` security group.
+Added MFA Test User to the `IT-Helpdesk` security group.
 
-Refreshed the Members page and confirmed that the test user appeared in the group membership list.
+After refreshing the Members page, the test account appeared in the group's membership list.
 
 ### 3. Verify Membership from the User Account
 
-Opened the MFA Test User account and reviewed its Groups page.
+Opened the MFA Test User account and checked its Groups page.
 
-Confirmed that `it helpdesk` appeared in the user's group list. This verified the membership change from both the group and user perspectives.
+The `IT-Helpdesk` group appeared in the user's group list, confirming the membership change from both the group and user account views.
 
 ### 4. Remove the Test User
 
-Removed MFA Test User from the `it helpdesk` security group.
+Removed MFA Test User from the `IT-Helpdesk` group.
 
-Refreshed the Members page and confirmed that the user was no longer listed as a member.
+After refreshing the Members page, the user was no longer listed. The group returned to zero members and retained its Assigned membership type.
 
-The user account and its registered authentication method were not deleted or changed by this operation.
+The removal affected the user's membership in this group. The user account and its registered authentication method remained in place.
 
 ### 5. Review Administrative Roles
 
-Opened the group's Roles and administrators page and reviewed the information about assignable roles and directory-level roles.
+Opened the group's Roles and administrators page and reviewed the information about administrative role assignments.
 
-Learned that administrative roles grant privileged permissions and are managed differently from ordinary group membership.
+Directory roles grant administrative permissions, while ordinary security group membership organizes users and may be used to manage access to resources. No administrative roles were assigned during this exercise.
 
-No administrative roles were assigned during this exercise.
+## Verification Results
 
-## Skills Demonstrated
-
-- Reviewing Microsoft Entra security group properties.
-- Understanding assigned group membership.
-- Adding users to security groups.
-- Verifying group membership from both group and user views.
-- Removing users from security groups.
-- Understanding the difference between group membership and administrative role assignments.
-- Verifying changes and cleaning up a test environment.
-
-## Environment
-
-- Microsoft Entra ID free tenant
-- Microsoft Entra admin center
-- Existing `it helpdesk` security group
-- Dedicated MFA Test User account
+- Confirmed the group type was Security.
+- Confirmed the membership type was Assigned.
+- Verified that MFA Test User appeared in the group membership list after being added.
+- Verified that `IT-Helpdesk` appeared on the user's Groups page.
+- Confirmed that the user no longer appeared in the group after removal.
+- Confirmed that the group returned to zero members.
+- No administrative roles were assigned.
 
 ## Results
 
-Successfully added MFA Test User to the `it helpdesk` security group, verified the membership from both the group and user account pages, and removed the user after testing.
+MFA Test User was added to and removed from the `IT-Helpdesk` security group. The membership change was verified from both the group and user account views.
 
-Confirmed that the group returned to zero members and retained its Assigned membership type.
-
-Reviewed the Roles and administrators page to understand the distinction between group membership and administrative role assignments.
+The group retained its original configuration, and the test account remained in place with its authentication method unchanged. The review of the Roles and administrators page also reinforced the distinction between group membership and directory role assignments.
 
 ## Key Learnings
 
-## Key Learnings
+Assigned membership gives administrators direct control over which users belong to a security group. Checking membership from both the group and user account pages provides a useful way to verify changes.
 
-Security groups provide a way to organize users and manage access consistently. With assigned membership, administrators manually control which users belong to the group.
+Group membership does not automatically grant permissions in every situation. Access depends on how the group is used by an application, resource, or access policy.
 
-Adding a user to a group does not automatically grant permissions unless that group is connected to an access assignment or permission configuration.
-
-Administrative roles are different from ordinary group membership because they grant privileged permissions. Understanding this distinction helps administrators follow least privilege principles and avoid granting unnecessary access.
-
-During this lab, I added MFA Test User to the `it helpdesk` security group, verified the membership from both the group and user pages, and then removed the user.
-
-I also reviewed the group's Roles and administrators section to understand how administrative roles work. I did not assign any roles to the group during this lab.
+Directory roles are separate from ordinary group membership and can grant privileged administrative permissions. Keeping these distinctions clear helps prevent unnecessary access and supports the principle of least privilege.
