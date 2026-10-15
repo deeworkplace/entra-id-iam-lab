@@ -61,3 +61,4 @@ Successfully configured and tested SAML SSO between Microsoft Entra ID and the F
 
 The screenshot below shows the successful SAML login test and the validation checks completed by FrostID.
 
+![FrostID SAML login success](lab-10-saml-login-success.JPG)
