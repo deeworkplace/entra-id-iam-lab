@@ -1,5 +1,5 @@
 # Lab 10: Microsoft Entra ID SAML Single Sign-On
-
+ 
 ## Objective
 
 Configure Microsoft Entra ID for SAML-based single sign-on (SSO) and test authentication using the FrostID SAML Service Provider playground.
