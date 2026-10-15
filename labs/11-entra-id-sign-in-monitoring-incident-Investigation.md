@@ -89,4 +89,4 @@ Completed a sign-in investigation involving a failed guest invitation acceptance
 
 ## Evidence
 
-![Microsoft Entra ID sign-in investigation](lab-11-sign-in-investigation.jpg)
+![Microsoft Entra ID sign-in investigation](lab-11-sign-in-investigation.JPG)
